@@ -931,9 +931,6 @@ tbody{
     .pandashop {
         text-align: center;
     }
-    .echipamente h1{
-        font-size: 16px;
-    }
     .echipamente {
         margin-top: 2px;
         margin-bottom: 2px;
@@ -942,8 +939,8 @@ tbody{
     }
     .echipamente h1 {
        padding: 2% 8% 2% 16%;
-       margin: -1% 2% -3% 8%;
-       font-size: 24px;
+         margin: -1% 2% -3% 8%;
+        font-size: 24px;
     
     }
     .page-intro__title {
