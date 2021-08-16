@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> MDTurism</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="../images/logo.png" />
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="inner-width">
+                <ul class="left">
+                    <li>
+                        <a href="../index.html">
+                            MDTurism
+                            <i class="fas fa-map-marked logo"></i>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="center">
+                    <li>
+                        <a title="Creeaza-ti cont" href="cont.html">Creeaza-ti un cont</a>
+                    </li>
+                    <li>
+                        <a title="Intra in cont" href="intracont.html">Intra in cont</a>
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li>
+                        <a target="_blank" title="instagram" href="https://www.instagram.com/travelmoldova/">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="twitter" href="https://twitter.com/travelmoldova/">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" title="email" href="https://www.travel.md/contact/">
+                            <i class="fas fa-envelope-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+    </header>
+    <div class="page-container">
+        <aside id="side-menu">
+            <a href="../index.html">
+                <i class="fas fa-home"></i>
+                DESCOPERĂ
+            </a>
+            <a href="ecoturism.html">
+                <i class="fas fa-leaf"></i>
+                ECOTURISM
+            </a>
+            <a href="activitati.html">
+                <i class="fas fa-hiking"></i>
+                ACTVITĂȚI
+            </a>
+            <a href="foto.html">
+                <i class="fas fa-images"></i>
+                FOTOGRAFII
+            </a>
+            <a href="video.html">
+                <i class="fas fa-video"></i>
+                VIDEO
+            </a>
+            <a href="shop.html">
+                <i class="fas fa-shopping-cart"></i>
+                SHOP
+            </a>
+            <a href="biciclete.html">
+                <i class="fas fa-bicycle"></i>
+                BIKE
+            </a>
+        </aside>
+        <main class="cont">
+            <table border="0" align="center">
+                <h1 class="offer_title">Cont nou turist</h1>
+                <tr>
+                    <td class="lmf">&nbsp;</td>
+                     <td class="lmf">&nbsp;</td>
+                    <td colspam="3" valign="top" class="mmf"><b>Creeaza-ti cont</b>
+                    <div class="tiny gray">Campurile marcate cu (*) sunt obligatorii.</div> </td>
+                    <td class="rmf">&nbsp;</td>
+                    <td class="rmf">&nbsp;</td>
+                    
+                </tr>
+                <form name="turist" method="post" id="turist">
+                    <input type="hidden" name="submit_form" value="1">
+                        <tr>
+                            <td>
+                                <div class="formular">
+                                    *Email:
+                                </div>
+                            </td>
+                            <td>
+                                <div class="formular">
+                                    <input type="text" name="email" value="" id="email" class="">
+                                    <div class="tiny gray">
+                                        Ex.:
+                                        bill.gates@microsoft.ro
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="formular">
+                                    *Parola:
+                                </div>
+                            </td>
+                            <td>
+                                <div class="formular">
+                                    <input type="password" name="pass" id="pass" class="">
+                                    <div class="tiny gray">
+                                        Ex.:
+                                        catelulmeu1990
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="formular">
+                                    *Verificare
+                                    Parola:
+                                </div>
+                            </td>
+                            <td>
+                                <div class="formular">
+                                    <input type="password" name="vpass" id="vpass" class="">
+                                    <div class="tiny gray">
+                                        Ex.:
+                                        catelulmeu1990
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="3">
+                                <div class="formular">
+                                    <input type="checkbox" name="termeni" value="da" id="termeni" class="">
+                                    <label for="termeni">
+                                        *Sunt de acord cu
+                                        <a href="https://ebloc.md/termeni-si-conditii.html"
+                                            title="Termenii si conditiile Best Tourism" class="blue" target="_blank">
+                                            termenii si conditiile</a> de utilizare:</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+
+                            <td colspan="3">
+                                <a class="cursor tab selected formular2" onclick="verifica_inregistrare()">
+                                    Cont nou »
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" align="center">
+                        </tr>
+                        <tr>
+                            <td colspan="4"> &nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <h1 class="offer_title">
+                                    Mai ai 2 minute?
+                                </h1>
+                                <div class="tiny gray">
+                                    Completeaza restul datelor pentru a profita   de toate serviciile noastre inclusiv pentru a participa la concurs
+                                </div>
+                                <div class="clear1 formular2"> &nbsp; </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="formular">
+                                    <label><input type="radio" name="sex" value="m">Domnul</label>
+                                    <label><input type="radio" name="sex" value="f">Doamna
+                                    </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="formular">
+                                    Nume:
+                                </div>
+                            </td>
+                            <td>
+                                <div class="formular">
+                                    <input type="text" name="nume" value="">
+                                </div>
+                            </td>
+                            <td>
+                                <div class="formular">
+                                    Prenume:
+                                </div>
+                            </td>
+                            <td>
+                                <div class="formular">
+                                    <input type="text" name="prenume" value="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="formular">
+                                    Raionul:
+                                </div>
+                            </td>
+                            <td>
+                                <div class="formular">
+                                    <select name="raionul" id="raionul" style="width:135px;"
+                                        onchange="handleOnChange(this);">
+                                        <option value="">
+                                            alege
+                                        </option>
+
+                                        <option value="1">
+                                            Anenii Noi
+                                        </option>
+
+                                        <option value="2">
+                                            Basarabeasca
+                                        </option>
+
+                                        <option value="3">
+                                            Briceni
+                                        </option>
+
+                                        <option value="4">
+                                            Cahul
+                                        </option>
+
+                                        <option value="5">
+                                            Cantemir
+                                        </option>
+
+                                        <option value="6">
+                                            Călărași
+                                        </option>
+
+                                        <option value="7">
+                                            Căușeni
+                                        </option>
+
+                                        <option value="9">
+                                            Cimișlia
+                                        </option>
+
+                                        <option value="8">
+                                            Criuleni
+                                        </option>
+
+                                        <option value="40">
+                                            Dondușeni
+                                        </option>
+
+                                        <option value="10">
+                                            BUZAU
+                                        </option>
+
+                                        <option value="51">
+                                            CALARASI
+                                        </option>
+
+                                        <option value="11">
+                                            Drochia
+                                        </option>
+
+                                        <option value="12">
+                                            Dubăsari
+                                        </option>
+
+                                        <option value="13">
+                                            Edineț
+                                        </option>
+
+                                        <option value="14">
+                                            Fălești
+                                        </option>
+
+                                        <option value="15">
+                                            Florești
+                                        </option>
+
+                                        <option value="16">
+                                            Glodeni
+                                        </option>
+
+                                        <option value="17">
+                                            Hîncești
+                                        </option>
+
+                                        <option value="52">
+                                            Ialoveni
+                                        </option>
+
+                                        <option value="18">
+                                            Leova
+                                        </option>
+
+                                        <option value="19">
+                                            Nisporeni
+                                        </option>
+
+                                        <option value="20">
+                                            Ocnița
+                                        </option>
+
+                                        <option value="21">
+                                            Orhei
+                                        </option>
+
+                                        <option value="22">
+                                            Rezina
+                                        </option>
+
+                                        <option value="55">
+                                            Rîșcani
+                                        </option>
+
+                                        <option value="24">
+                                            Sîngerei
+                                        </option>
+
+                                        <option value="25">
+                                            Soroca
+                                        </option>
+
+                                        <option value="26">
+                                            Strășeni
+                                        </option>
+
+                                        <option value="27">
+                                            Șoldănești
+                                        </option>
+
+                                        <option value="28">
+                                            Ștefan Vodă
+                                        </option>
+
+                                        <option value="29">
+                                            Taraclia
+                                        </option>
+
+                                        <option value="31">
+                                            Telenești
+                                        </option>
+
+                                        <option value="30">
+                                            Ungheni
+                                        </option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="formular">
+                                    Localitatea:
+                                </div>
+                            </td>
+                            <td colspan="2">
+                                <div class="formular">
+                                    <input type="text" name="localitatea" value="">
+                                </div>
+                                <div class="tiny gray italic">
+                                    Pentru participantii la concursuri
+                                </div>
+                            </td>
+
+                        <tr>
+                            <td>
+                                <div class="formular">
+                                    Cod postal:
+                                </div>
+                            </td>
+                            <td colspan="2">
+                                <div class="formular">
+                                    <input type="text" name="cod_postal" value="">
+                                    <a class="green" href="https://www.md.coduripostale.com/" target="_blank">
+                                        afla aici»
+                                    </a>
+                                </div>
+                                <div class="tiny gray italic">
+                                    Pentru participantii la concursuri
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="formular">
+                                    Telefon:
+                                </div>
+                            </td>
+                            <td>
+                                <div class="formular">
+                                    <input type="text" name="telefon" value="">
+                                </div>
+                                <div class="tiny gray italic">
+                                    Pentru participantii la concursuri
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="data"> Data nasterii:</label>
+                            </td>
+                            <td><input type="date" id="data" required /></td>
+                            <td colspan="2">
+                                <div class="formular">
+
+                                    <script>DateInput('data_nasterii', true, 'YYYY-MM-DD')</script>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <div class="formular1">
+                                    <input type="checkbox" value="da" name="newsletter">
+                                    Doresc să primesc newsletter
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <div class="formular1">
+                                    <input type="checkbox" value="da" name="anunturi">
+                                    Doresc sa primesc cele mai bune oferte pe email
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><b>Gata!</b>
+                            </td>
+                            <td colspan="3">
+                                <a class="cursor tab selected formular2" onclick="verifica_inregistrare()">
+                                    Salvează cont complet »
+                                </a>
+                            </td>
+                        </tr>
+                        </tr>
+                  
+                </form>
+
+                </td>
+
+            </table>
+        </main>
+    </div>
+    <footer>
+        <span id="data">
+        Copyright MDTurism.com
+        </span> 
+    </footer>
+<script src="../js/main.js"></script>
+</body>
+
+</html>
